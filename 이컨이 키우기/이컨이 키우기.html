@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>이컨이 키우기</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <div style="padding-left: 1000px;">
+        <div style="font-size: 60px;">샵</div>
+        <div style="font-size: 40px;">치킨</div>
+        <div style="font-size: 40px;">12000원</div>
+        <button onclick="if(money > 12000)
+        {
+            chi();
+        } else {
+            wrok();
+      }">구매</button>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+
+  <script src="script.js">
+  </script>
+  <h1 class="iconkiu">이컨이 키우기</h1>
+  <div> </div>
+  <div class="iconkiu">게임 설명!</div>
+  <div style="font-size: 25px;"> 배고픈 이컨이를 위해 열심히 클릭해서 돈을 벌어 이컨이에게 치킨을 사주자!</div>
+  <div></div>
+  <div><p class=iconkiu id="displayMoney">0</p> <p class="iconkiu">원</p></div>
+
+<!-- 버튼 -->
+<button class=button onclick="increaseMoney()">Money 증가</button>
+
+<script>
+    // money 변수 초기화
+    var money = 0;
+
+    // HTML 문서에서 해당 위치를 찾아 변수 값을 표시
+    var displayElement = document.getElementById("displayMoney");
+
+    // 버튼 클릭 시 money 변수 증가 및 표시하는 함수
+    function increaseMoney() {
+        // money 변수 1 증가
+        money += 1;
+
+        // 증가한 값을 HTML에 표시
+        displayElement.innerHTML = money;
+    }
+
+</script>
+<div></div>
+<h1> 1.1v </h1>
+  
+
+</body>
+
+</html>
